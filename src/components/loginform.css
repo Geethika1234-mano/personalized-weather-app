@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'CustomFont';
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url(../fonts/RolexLight.woff2);
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+     background: url('../images/back.jpeg') no-repeat;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(95deg, rgb(2, 106, 122) 12.85%, rgb(242, 78, 163) 100.00%);
+}
+.cover{
+    background: rgb(27, 23, 23,0.5);
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(56, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+.alt-login{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    background-color:rgb(225, 205, 226); 
+    border-radius: 0.25em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input
+{
+    background: transparent;
+    border: none;
+    justify-content: center;
+    color: aliceblue;
+    /* margin-bottom: 3px solid black; */
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.google{
+   
+    background-image: url("../icons/google.png");
+}
+.facebook{
+    background-image: url("../icons/facebook.png");
+}
+
+.login-btn{
+    width: 40%;
+    height: 3em;
+    background-color: rgb(27, 23, 23,0.5);
+    color: rgb(238, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    transform: scale(1.25);
+}
+
+.text{
+    position: relative;
+    bottom:-2em;
+}
+
+button{
+    
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid #fff;
+}
